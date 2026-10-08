@@ -144,3 +144,162 @@ Best Model
 Accuracy %
    ↓
 Graphs
+
+🔍 1. Data Exploration
+
+The dataset was initially explored using:
+
+head()
+tail()
+info()
+shape
+columns
+describe()
+
+These operations were used to understand the dataset structure, number of observations, data types and statistical properties.
+
+📦 5. Outlier Analysis
+Outliers were analysed using boxplots and an IQR-based approach for numerical variables.
+This step was performed to identify unusual values in the numerical features before further modelling preparation.
+
+🤖 10. Machine Learning Algorithms
+
+The project workflow includes the following Regression algorithms:
+
+1. Linear Regression
+
+A basic regression algorithm used as a baseline model.
+
+2. Decision Tree Regressor
+
+Uses decision-tree-based rules to predict the rental count.
+
+3. Random Forest Regressor
+
+An ensemble learning algorithm that combines multiple decision trees.
+
+4. AdaBoost Regressor
+
+A boosting-based regression algorithm included in the project workflow.
+
+5. Gradient Boosting Regressor
+
+Builds models sequentially to improve prediction performance.
+
+
+🏆 12. Model Results
+
+The evaluated models produced the following results:
+
+Model	R² Score	MAE	MSE	RMSE
+Linear Regression	0.4206	99.62	17045.29	130.56
+Decision Tree	0.8809	36.06	3503.09	59.19
+Random Forest	0.9389	26.75	1798.31	42.41
+Gradient Boosting	0.8695	44.07	3840.27	61.97
+🥇 Best Performing Model
+
+Random Forest Regressor
+
+Performance:
+
+R² Score  : 0.9389
+MAE       : 26.75
+MSE       : 1798.31
+RMSE      : 42.41
+
+Random Forest achieved the highest R² score among the evaluated models and the lowest MAE and RMSE.
+
+📊 13. Accuracy Percentage
+
+For project presentation purposes, the R² score was expressed as a percentage:
+
+Accuracy % = R² × 100
+
+For Random Forest:
+
+0.9389 × 100 = 93.89%
+
+Therefore:
+
+Random Forest R²-based percentage = 93.89%
+
+Note: This is an R²-based percentage used for project presentation. It is not classification accuracy.
+
+📉 14. Visualizations
+
+The project includes graphs for analysing:
+
+Feature correlations
+Outliers
+Model performance
+R² comparison
+MSE comparison
+Hourly bike rental patterns
+
+These visualizations help understand the dataset and compare the performance of different regression algorithms.
+
+🛠️ Technologies Used
+Python
+Jupyter Notebook
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn
+Machine Learning
+Regression
+📁 Project Structure
+Bike-Sharing-Regression/
+│
+├── hour.csv
+│
+├── Bike_Sharing_Regression.ipynb
+│
+├── README.md
+│
+└── Bike_Sharing_Regression_Presentation.pptx
+🚀 How to Run the Project
+Step 1 – Clone the repository
+git clone <your-repository-link>
+Step 2 – Open the project
+
+Open the project folder in:
+
+Jupyter Notebook
+JupyterLab
+VS Code
+Google Colab
+Step 3 – Install required libraries
+pip install pandas numpy matplotlib seaborn scikit-learn
+Step 4 – Load the dataset
+
+Make sure hour.csv is available in the same project directory.
+
+Step 5 – Run the notebook
+
+Open:
+
+Bike_Sharing_Regression.ipynb
+
+and execute the cells sequentially.
+
+🎓 Learning Outcomes
+
+Through this project, the following concepts were implemented:
+
+Dataset exploration
+Data cleaning
+Missing-value checking
+Duplicate checking
+Correlation analysis
+Feature engineering
+Outlier analysis
+Feature selection
+Yeo-Johnson transformation
+Standard scaling
+Train/Test splitting
+Regression algorithms
+Model evaluation
+Model comparison
+Data visualization
+
